@@ -1,0 +1,33 @@
+<%- layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <h3 class="mb-3">SignUp on WanderVibes</h3>
+        <form method="post" action="/users/signup" class="needs-validation" novalidate>
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Usernaame</label>
+                <input name="username" id="username" class="form-control" type="text" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter valid Username</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input name="email" id="email" class="form-control" type="email" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter Email</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input name="password" id="password" class="form-control" type="password" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter valid Password</div>
+            </div>
+
+            <button class="btn mb-3 btn-dark edit-btn">Sign Up</button>
+            
+        </form>
+    </div>
+</div>
